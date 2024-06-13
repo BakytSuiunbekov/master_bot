@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:master_bot/constants/app_color.dart';
 import 'package:master_bot/constants/app_text.dart';
-import 'package:master_bot/models/sozduk_detals_model.dart';
+import 'package:master_bot/bloc/slovar_pege.dart';
 import 'package:master_bot/models/suroo_model.dart';
 import 'package:master_bot/pages/test_page.dart';
 
@@ -52,10 +52,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => TestPage(
-                      suroo: orusSurooIndex,
-                      sozdor: orusSozdorindex,
-                    ),
+                    builder: (context) =>
+                        // TestPage(suroo: orusSurooIndex),
+                        const SlovarPege(sozdor: []),
                   ),
                 );
               },

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:master_bot/pages/hom_page.dart';
+import 'package:master_bot/bloc/hom_page.dart';
 
 void main() {
   runApp(const MyApp());
